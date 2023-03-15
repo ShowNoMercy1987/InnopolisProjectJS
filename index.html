@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <!-- 32×32 -->
+    <link rel="icon" href="./assets/img/favicon/favicon.ico" sizes="any" />
+    <!-- SVG любого размера -->
+    <link
+      rel="icon"
+      href="./assets/img/favicon/favicon.svg"
+      type="image/svg+xml"
+    />
+    <!-- 180x180 -->
+    <link
+      rel="apple-touch-icon"
+      href="./assets/img/favicon/apple-touch-icon.png"
+    />
+    <title>MyStudies</title>
+  </head>
+
+  <body>
+    <div class="body-box">
+      <div class="header-box">
+        <header class="header inner-padding">
+          <a class="header-main-logo" href="./index.html">
+            <div class="header-logo">
+              <div class="header-logo__img">
+                <img
+                  class="header-logo__img_height"
+                  src="./assets/img/favicon/apple-touch-icon.png"
+                  alt="Логотип сайта"
+                />
+              </div>
+              <div class="header-logo__text">
+                <h1 class="h1-title">
+                  <span class="orange-text">My</span>Market
+                </h1>
+              </div>
+            </div>
+          </a>
+          <div class="header__buttons">
+            <div class="header__fav">
+              <svg
+                width="44"
+                height="35"
+                viewBox="0 0 44 35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M3.30841 2.95447C7.29791 -0.875449 13.7444 -0.875449 17.7339 2.95447L22.0002 7.05027L26.2667 2.95447C30.2563 -0.875449 36.7027 -0.875449 40.6923 2.95447C44.6817 6.78439 44.6817 12.973 40.6923 16.803L22.0002 34.7472L3.30841 16.803C-0.681091 12.973 -0.681091 6.78439 3.30841 2.95447ZM14.7876 5.78289C12.4253 3.51507 8.61701 3.51507 6.25468 5.78289C3.89237 8.05071 3.89237 11.7067 6.25468 13.9746L22.0002 29.0904L37.7461 13.9746C40.1084 11.7067 40.1084 8.05071 37.7461 5.78289C35.3838 3.51507 31.5755 3.51507 29.2132 5.78289L22.0002 12.7072L14.7876 5.78289Z"
+                />
+              </svg>
+              <div class="header__fav-icon">
+                <span class="header__number-fav">12</span>
+              </div>
+            </div>
+            <div class="header__like-list">
+              <span class="header__fav-title">Избранное</span>
+              <span class="header__like-added"></span>
+            </div>
+            <div class="header__fav">
+              <svg
+                width="42"
+                height="41"
+                viewBox="0 0 42 41"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.791016 0.915039H8.0882H9.79612L10.1311 2.5228L11.0838 7.09618H39.4231H41.8823L41.4781 9.42498L39.3319 21.7872L39.0417 23.4584H37.2769H14.4927L15.3763 27.7H37.2769V31.7H13.6684H11.9605L11.6255 30.0922L7.33304 9.4884L9.37593 9.09618L7.33304 9.4884L6.38027 4.91504H0.791016V0.915039ZM11.9172 11.0962L13.6593 19.4584H35.5121L36.9638 11.0962H11.9172ZM19.2829 36.6778C19.2829 38.5186 17.7325 40.007 15.815 40.007C13.8974 40.007 12.347 38.5186 12.347 36.6778C12.347 34.837 13.8974 33.3876 15.815 33.3876C17.7325 33.3876 19.2829 34.837 19.2829 36.6778ZM32.9863 40.007C34.9038 40.007 36.4542 38.5186 36.4542 36.6778C36.4542 34.837 34.9038 33.3876 32.9863 33.3876C31.0686 33.3876 29.5181 34.837 29.5181 36.6778C29.5181 38.5186 31.0686 40.007 32.9863 40.007Z"
+                />
+              </svg>
+              <div class="header__buy-icon">
+                <span class="header__number-buy">3</span>
+              </div>
+            </div>
+            <div class="header__fav burger-button" id="burger-button">
+              <div class="burger__button-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="menu inner-padding">
+          <div class="menu-wrap">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="" class="link-blue-color">Главная</a>
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">Новости</a>
+                  </li>
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">Форум</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link-blue-color">Смартфоны</a>
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">Android</a>
+                  </li>
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">iOS</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link-blue-color">Планшеты</a>
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">Android</a>
+                  </li>
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">iOS</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link-blue-color">Комплектующие</a>
+                <ul class="menu__sub-list">
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">Кабели</a>
+                  </li>
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">Переходники</a>
+                  </li>
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">Гарнитура</a>
+                  </li>
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">Зарядки</a>
+                  </li>
+                  <li class="menu__sub-link">
+                    <a class="link-blue-color" href="#">Переферия</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__item">
+                <a href="" class="link-blue-color">Обратная связь</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="burger" id="burger-menu">
+        <div class="burger__list">
+          <ul class="synopsis__marker_disbled">
+            <li class="burger-title">
+              <a href="#" class="link-blue-color">Главная</a>
+            </li>
+            <ul class="synopsis__marker_disbled">
+              <li><a href="#" class="link-black-color">Новости</a></li>
+              <li><a href="#" class="link-black-color">Форум</a></li>
+            </ul>
+          </ul>
+
+          <ul class="synopsis__marker_disbled">
+            <li class="burger-title">
+              <a href="#" class="link-blue-color">Смартфоны</a>
+            </li>
+            <ul class="synopsis__marker_disbled">
+              <li><a href="#" class="link-black-color">Android</a></li>
+              <li><a href="#" class="link-black-color">iOS</a></li>
+            </ul>
+          </ul>
+
+          <ul class="synopsis__marker_disbled">
+            <li class="burger-title">
+              <a href="#" class="link-blue-color">Планшеты</a>
+            </li>
+            <ul class="synopsis__marker_disbled">
+              <li><a href="#" class="link-black-color">Android</a></li>
+              <li><a href="#" class="link-black-color">iOS</a></li>
+            </ul>
+          </ul>
+          <ul class="synopsis__marker_disbled">
+            <li class="burger-title">
+              <a href="#" class="link-blue-color">Комплектующие</a>
+            </li>
+            <ul class="synopsis__marker_disbled">
+              <li><a href="#" class="link-black-color">Кабели</a></li>
+              <li><a href="#" class="link-black-color">Переходники</a></li>
+              <li><a href="#" class="link-black-color">Гарнитура</a></li>
+              <li><a href="#" class="link-black-color">Зарядки</a></li>
+              <li><a href="#" class="link-black-color">Переферия</a></li>
+            </ul>
+          </ul>
+          <ul class="synopsis__marker_disbled">
+            <li class="burger-title">
+              <a href="#" class="link-blue-color">Обратная связь</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="content">
+        <nav class="crumps crumps_padding">
+          <a class="link-blue-color" href="#">Электроника</a> <span>></span>
+          <a class="link-blue-color" href="#">Смартфоны и гаджеты</a>
+          <span>></span>
+          <a class="link-blue-color" href="#">Мобильные телефоны</a>
+          <span>></span>
+          <a class="link-blue-color link-selected" href="#">Apple</a>
+        </nav>
+
+        <main class="inner-padding">
+          <section>
+            <div class="name">
+              <p class="section-titile">Смартфон Apple iPhone 13, синий.</p>
+            </div>
+
+            <div class="big-photos">
+              <img
+                class="big-photos__img big-photos__img_height"
+                src="./assets/img/image-1.webp"
+                alt="IPhone 13 изображение фронтального и тылового вида"
+              />
+              <img
+                class="big-photos__img big-photos__img_height"
+                src="./assets/img/image-2.webp"
+                alt="IPhone 13 изображение фронтального вида"
+              />
+              <img
+                class="big-photos__img big-photos__img_height"
+                src="./assets/img/image-3.webp"
+                alt="IPhone 13 изображение вида под углом"
+                height="387"
+              />
+              <img
+                class="big-photos__img big-photos__img_height"
+                src="./assets/img/image-4.webp"
+                alt="IPhone 13 изображение камеры"
+              />
+              <img
+                class="big-photos__img big-photos__img_height"
+                src="./assets/img/image-5.webp"
+                alt="IPhone 13 изображение тылового и фронтального вида"
+              />
+            </div>
+
+            <div class="wrapper margin-top30">
+              <div class="specs">
+                <div class="colors-box">
+                  <p class="block-title margin-bottom15">Цвет товара: синий</p>
+                  <div class="colors-box__list">
+                    <div class="colors-box__btn">
+                      <img
+                        class="colors-box__img"
+                        src="./assets/img/color-1.webp"
+                        alt="IPhine-13 красного цвета"
+                      />
+                    </div>
+                    <div class="colors-box__btn">
+                      <img
+                        class="colors-box__img"
+                        src="./assets/img/color-2.webp"
+                        alt="IPhine-13 зеленого цвета"
+                      />
+                    </div>
+                    <div class="colors-box__btn">
+                      <img
+                        class="colors-box__img"
+                        src="./assets/img/color-3.webp"
+                        alt="IPhine-13 розового цвета"
+                      />
+                    </div>
+                    <div class="colors-box__btn">
+                      <img
+                        class="colors-box__img"
+                        src="./assets/img/color-4.webp"
+                        alt="IPhine-13 синего цвета"
+                      />
+                    </div>
+                    <div class="colors-box__btn">
+                      <img
+                        class="colors-box__img"
+                        src="./assets/img/color-5.webp"
+                        alt="IPhine-13 белого цвета"
+                      />
+                    </div>
+                    <div class="colors-box__btn">
+                      <img
+                        class="colors-box__img"
+                        src="./assets/img/color-6.webp"
+                        alt="IPhine-13 черного цвета"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="memory">
+                  <p class="block-title margin-bottom15">
+                    Конфигурация памяти: 128 ГБ
+                  </p>
+                  <div class="memory__buttons">
+                    <button
+                      class="memory__gray-button"
+                    >
+                      128 ГБ
+                    </button>
+                    <button class="memory__gray-button">256 ГБ</button>
+                    <button class="memory__gray-button">512 ГБ</button>
+                  </div>
+                </div>
+
+                <div class="charakter">
+                  <p class="block-title">Характеристики товара</p>
+                  <div class="charakter__list">
+                    <ul>
+                      <li
+                        class="charakter__marker charakter__marker_marker-margin"
+                      >
+                        Экран: <b>6.1</b>
+                      </li>
+                      <li
+                        class="charakter__marker charakter__marker_marker-margin"
+                      >
+                        Встроенная память: <b>128 ГБ</b>
+                      </li>
+                      <li
+                        class="charakter__marker charakter__marker_marker-margin"
+                      >
+                        Операционная система: <b>iOS 15</b>
+                      </li>
+                      <li
+                        class="charakter__marker charakter__marker_marker-margin"
+                      >
+                        Беспроводные интерфейсы: <b>NFC, Bluetooth, Wi-Fi</b>
+                      </li>
+                      <li
+                        class="charakter__marker charakter__marker_marker-margin"
+                      >
+                        Процессор:
+                        <b>
+                          <a
+                            class="link-blue-color"
+                            href="https://ru.wikipedia.org/wiki/Apple_A15"
+                            target="_blank"
+                            >Apple a-15 Bionic</a
+                          >
+                        </b>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="synopsis">
+                  <p class="block-title margin-bottom15">Описание</p>
+                  <div class="synopsis__list">
+                    <ul>
+                      <li class="synopsis__marker synopsis__marker_disbled">
+                        Наша самая совершенная система двух камер.
+                      </li>
+                      <li class="synopsis__marker synopsis__marker_disbled">
+                        Особый взгляд на прочность дисплея.
+                      </li>
+                      <li class="synopsis__marker synopsis__marker_disbled">
+                        Чип, с которым всё супербыстро.
+                      </li>
+                      <li class="synopsis__marker synopsis__marker_disbled">
+                        Аккумулятор держится заметно дольше.
+                      </li>
+                      <li class="synopsis__marker synopsis__marker_disbled">
+                        <i>iPhone 13 - сильный мира всего.</i>
+                      </li>
+                    </ul>
+                    <p>
+                      Мы разработали совершенно новую схему расположения и
+                      развернулиобъективы на 45 градусов. Благодаря этому внутри
+                      корпуса поместилась нашалучшая система двух камер с
+                      увеличенной матрицей широкоугольной камеры. Кроме того, мы
+                      освободили место для системы оптической
+                      стабилизацииизображения сдвигом матрицы. И повысили
+                      скорость работы матрицы насверхширокоугольной камере.
+                    </p>
+
+                    <p>
+                      Новая сверхширокоугольная камера видит больше деталей в
+                      тёмных областяхснимков. Новая широкоугольная камера
+                      улавливает на 47% больше света для более качественных
+                      фотографий и видео. Новая оптическая стабилизация
+                      сосдвигом матрицы обеспечит чёткие кадры даже в
+                      неустойчивом положении.
+                    </p>
+
+                    <p>
+                      Режим «Киноэффект» автоматически добавляет великолепные
+                      эффекты перемещенияфокуса и изменения резкости. Просто
+                      начните запись видео. Режим «Киноэффект»будет удерживать
+                      фокус на объекте съёмки, создавая красивый эффект
+                      размытиявокруг него. Режим «Киноэффект» распознаёт, когда
+                      нужно перевести фокус на другогочеловека или объект,
+                      который появился в кадре. Теперь ваши видео будут
+                      смотретьсякак настоящее кино.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="table margin-bottom20">
+                  <p class="block-title">Сравнение моделей</p>
+                  <table class="table__body">
+                    <thead class="table__head">
+                      <tr class="table__line">
+                        <th class="table-cell table-border-right">Модель</th>
+                        <th class="table-cell table-border-right">Вес</th>
+                        <th class="table-cell table-border-right">Высота</th>
+                        <th class="table-cell table-border-right">Ширина</th>
+                        <th class="table-cell table-border-right">Толщина</th>
+                        <th class="table-cell table-border-right">Чип</th>
+                        <th class="table-cell table-border-right">
+                          Объем памяти
+                        </th>
+                        <th class="table-cell">Аккумулятор</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="table__line table__line_target">
+                        <td class="table-cell table-border-right">IPhone-11</td>
+                        <td class="table-cell table-border-right">
+                          194 грамма
+                        </td>
+                        <td class="table-cell table-border-right">150.9 мм</td>
+                        <td class="table-cell table-border-right">75.7 мм</td>
+                        <td class="table-cell table-border-right">8.3 мм</td>
+                        <td class="table-cell table-border-right">
+                          A13 Bionic chip
+                        </td>
+                        <td class="table-cell table-border-right">До 128 ГБ</td>
+                        <td class="table-cell">До 17 часов</td>
+                      </tr>
+                      <tr class="table__line table__line_target">
+                        <td class="table-cell table-border-right">IPhone-12</td>
+                        <td class="table-cell table-border-right">
+                          164 грамма
+                        </td>
+                        <td class="table-cell table-border-right">146.7 мм</td>
+                        <td class="table-cell table-border-right">71.5 мм</td>
+                        <td class="table-cell table-border-right">7.4 мм</td>
+                        <td class="table-cell table-border-right">
+                          A14 Bionic chip
+                        </td>
+                        <td class="table-cell table-border-right">До 256 ГБ</td>
+                        <td class="table-cell">До 19 часов</td>
+                      </tr>
+                      <tr class="table__line table__line_target">
+                        <td class="table-cell table-border-right">IPhone-13</td>
+                        <td class="table-cell table-border-right">
+                          174 грамма
+                        </td>
+                        <td class="table-cell table-border-right">146.7 мм</td>
+                        <td class="table-cell table-border-right">71.5 мм</td>
+                        <td class="table-cell table-border-right">7.65 мм</td>
+                        <td class="table-cell table-border-right">
+                          A15 Bionic chip
+                        </td>
+                        <td class="table-cell table-border-right">До 512 ГБ</td>
+                        <td class="table-cell">До 19 часов</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="reviews">
+                  <div class="reviews-title">
+                    <div class="reviews-title__count">
+                      <p class="review-title">Отзывы</p>
+                      <span class="reviews-count">425</span>
+                    </div>
+                  </div>
+
+                  <div class="reviews-list">
+                    <div class="review-block">
+                      <div class="review-block__img">
+                        <img
+                          class="review-block__avatar"
+                          src="./assets/img/review-1.jpeg"
+                          alt="аватар пользователя"
+                        />
+                      </div>
+                      <div class="review-block__title">
+                        <div class="review-block__user">
+                          <p class="rewiews-user">Марк Г.</p>
+                          <img
+                            class="review-block__stars"
+                            src="./assets/img/star-5.png"
+                            alt="рейтинг устройства"
+                          />
+                        </div>
+                        <div class="review__text review__text_padding">
+                          <p><b>Опыт использования:</b> менее месяца</p>
+                          <p>
+                            <b>Достоинства:</b> это мой первый айфон после после
+                            огромного количества телефонов на андроиде.
+                            всёплавно, чётко и красиво. довольно шустрое
+                            устройство. камера весьма неплохая,ширик тоже на
+                            высоте.
+                          </p>
+                          <p>
+                            <b>Недостатки:</b> к самому устройству мало имеет
+                            отношение, но перенос данных с андроида -
+                            адскаявещь) а если нужно переносить фото с компа, то
+                            это только через itunes, которыйурезает качество
+                            фотографий исходное
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="review-block">
+                      <div class="review-block__img">
+                        <img
+                          class="review-block__avatar"
+                          src="./assets/img/review-2.jpeg"
+                          alt="аватар пользователя"
+                        />
+                      </div>
+                      <div class="review-block__title">
+                        <div class="review-block__user">
+                          <p class="rewiews-user">Валерий Коваленко</p>
+                          <img
+                            class="review-block__stars"
+                            src="./assets/img/star-5.png"
+                            alt="рейтинг устройства"
+                          />
+                        </div>
+                        <div class="review__text">
+                          <p><b>Опыт использования:</b> менее месяца</p>
+                          <p>
+                            <b>Достоинства:</b> OLED экран, Дизайн, Система
+                            камер, Шустрый А15, Заряд держит долго
+                          </p>
+                          <p><b>Недостатки:</b> Плохая ремонтопригодность</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="reviews-form margin-top60 reviews-form_padding">
+                  <form action="#" class="reviews-form__form" id="review-form">
+                    <fieldset class="reviews-form__field">
+                      <legend class="block-title margin-bottom15">
+                        Добавить свой отзыв
+                      </legend>
+                      <div class="reviews-form__name-stars">
+                        <input
+                          class="review-form__name form-hover-focus"
+                          type="text"
+                          name="name"
+                          id="name"
+                          placeholder="Имя и Фамилия"
+                        />
+                        <div class="review-form__err-name" id="err-name">
+                          <span class="review-form__err-text"
+                            >Вы забыли указать имя!</span
+                          >
+                        </div>
+                        <div class="review-form__err-stars" id="err-stars">
+                          <span class="review-form__err-rating"
+                            >Оценка должна быть от 1 до 5</span
+                          >
+                        </div>
+                        <input
+                          class="review-form__stars form-hover-focus"
+                          type="text"
+                          name="stars"
+                          id="stars"
+                          placeholder="Оценка"
+                        />
+                      </div>
+                      <textarea
+                        class="review-form__text form-hover-focus"
+                        type="text"
+                        name="text"
+                        id="text"
+                        placeholder="Текст отзыва"
+                      ></textarea>
+                      <button
+                        class="reviews-form__submit margin-top10"
+                        type="submit"
+                      >
+                        Отправить отзыв
+                      </button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+
+              <aside class="sidebar">
+                <div class="price">
+                  <div class="price__list">
+                    <div class="price__value">
+                      <div class="prise__discount">
+                        <span class="price__sell-old">75 990₽</span>
+                        <span class="price__sell-percent">-8%</span>
+                      </div>
+                      <button class="price__like">
+                        <svg
+                          class="heart-like"
+                          width="28"
+                          height="22"
+                          viewBox="0 0 28 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="price__hover"
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M2.78502 2.57269C5.17872 0.27474 9.04661 0.27474 11.4403 2.57269L14.0001 5.03017L16.56 2.57269C18.9537 0.27474 22.8216 0.27474 25.2154 2.57269C27.609 4.87064 27.609 8.5838 25.2154 10.8818L14.0001 21.6483L2.78502 10.8818C0.391321 8.5838 0.391321 4.87064 2.78502 2.57269ZM9.67253 4.26974C8.25515 2.90905 5.97018 2.90905 4.55278 4.26974C3.1354 5.63044 3.1354 7.82401 4.55278 9.18476L14.0001 18.2542L23.4476 9.18476C24.865 7.82401 24.865 5.63044 23.4476 4.26974C22.0302 2.90905 19.7452 2.90905 18.3279 4.26974L14.0001 8.42432L9.67253 4.26974Z"
+                            fill="#888888"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                    <p class="price__sell-new">67 990₽</p>
+                    <div class="price__post">
+                      <p>Самовывоз в четверг, 1 сентября — <b>бесплатно</b></p>
+                      <p>Курьером в четверг, 1 сентября — <b>бесплатно</b></p>
+                    </div>
+                    <button class="price__add price__add_cart" id="buy">
+                      Добавить в корзину
+                    </button>
+                  </div>
+                </div>
+                <div class="ads">
+                  <span class="ads__text">Реклама</span>
+                  <iframe class="side-ads" src="./ads.html"></iframe>
+                  <iframe class="side-ads" src="./ads.html"></iframe>
+                </div>
+              </aside>
+            </div>
+          </section>
+        </main>
+      </div>
+
+      <div class="footer-box margin-top100">
+        <footer class="footer inner-padding">
+          <div class="footer__copyright">
+            <p class="block-title font-size14">
+              <span class="symbol-bold">©</span> ООО
+              <span class="orange-text">«Мой</span>Маркет», 2018-2022г.
+            </p>
+            <p class="font-size14">
+              Для уточненияинформации звоните по номеру
+              <a class="link-blue-color" href="tel:79000000000"
+                >+7 900 000 0000</a
+              >,
+            </p>
+            <p class="font-size14">
+              а предложения по сотрудничеству отправляйте на почту
+              <a class="link-blue-color" href="mailto:partner@mymarket.com"
+                >partner@mymarket.com</a
+              >
+            </p>
+          </div>
+          <a class="link-blue-color" href="#top">Наверх</a>
+        </footer>
+        <script src="./assets/js/page-product.js"></script>
+        <script src="./assets/js/burger.js"></script>
+        <script src="./assets/js/like-addcart.js"></script>
+      </div>
+    </div>
+  </body>
+</html>
